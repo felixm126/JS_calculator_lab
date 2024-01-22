@@ -1,0 +1,13 @@
+header {
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	height: auto;
+	width: auto;
+}
+
+div {
+	border: 1px solid black;
+	height: auto;
+	width: auto;
+}
