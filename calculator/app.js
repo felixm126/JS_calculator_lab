@@ -9,10 +9,11 @@ Try not to use a separate event handler for each button.
 
 */
 
-//Set variables to pull from HTML document
 const display = document.getElementById('display')
-const numButtons = document.querySelectorAll('numButton')
-const opButtons = document.querySelectorAll('opButton')
+const numButtons = document.querySelectorAll('.numButton')
+const opButtons = document.querySelectorAll('.opButton')
+const clearButton = document.getElementById('btnClear')
+const equalsButton = document.getElementById('btnEquals')
 let previousInput = ''
 let currentInput = ''
 let currentOperation = null
@@ -86,3 +87,5 @@ function clear() {
 	currentOperation = null
 	updateDisplay()
 }
+clearButton.addEventListener('click', clear)
+equalsButton.addEventListener('click', calculate)
