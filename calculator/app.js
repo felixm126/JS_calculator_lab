@@ -44,7 +44,7 @@ function operator(operator) {
 	previousInput = currentInput
 	currentInput = ''
 }
-//Update the display with the currentInput
+//Update the disp lay with the currentInput
 function updateDisplay() {
 	display.value = currentInput
 }
